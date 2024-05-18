@@ -1,0 +1,15 @@
+---
+const name = "John"
+const users = [
+    {name: "John", age: 25},
+    {name: "Jane", age: 22},
+    {name: "Doe", age: 30}
+]
+---
+
+
+<ul>
+    {users.map(user => (
+        <li>{user.name} - {user.age}</li>
+    ))
+</ul>
